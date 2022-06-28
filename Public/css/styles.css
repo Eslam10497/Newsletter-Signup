@@ -49,6 +49,10 @@ body {
   user-select: none;
 }
 
+#my-btn {
+  background-color: #8cc0de !important;
+}
+
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
