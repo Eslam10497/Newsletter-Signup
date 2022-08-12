@@ -1,5 +1,6 @@
 /////////////////////////////////////////////////// npm Packages initialization ////////////////////////////////////////
 //Express
+require("dotenv").config();
 const express = require("express");
 const app = express();
 const port = 3000;
@@ -38,7 +39,7 @@ app.post("/", function (req, res) {
   const url = "https://us8.api.mailchimp.com/3.0/lists/519bc1f85f";
   const options = {
     method: "POST",
-    auth: "eslam1:70784b8b4a11f5d9d0540ade379475f8-us8",
+    auth: process.env.AUTH,
   };
   const request = https.request(url, options, function (response) {
     response.on("data", function (data) {
