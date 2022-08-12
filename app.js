@@ -18,11 +18,8 @@ app.get("/", function (req, res) {
 });
 app.post("/", function (req, res) {
   const firstName = req.body.first;
-  console.log("🚀 ~ file: app.js ~ line 18 ~ app.post ~ firstName", firstName);
   const lastName = req.body.last;
-  console.log("🚀 ~ file: app.js ~ line 18 ~ app.post ~ last Name", lastName);
   const email = req.body.email;
-  console.log("🚀 ~ file: app.js ~ line 18 ~ app.post ~ email", email);
   const data = {
     members: [
       {
@@ -60,5 +57,3 @@ app.post("/failure", function (req, res) {
 app.listen(process.env.PORT || 3000, function () {
   console.log("🚀 ~ file: app.js ~ line 19 ~ app.listen ~ , Server is running on port 3000 or on the server");
 });
-//app key = 70784b8b4a11f5d9d0540ade379475f8-us8
-//audience id = list if = 519bc1f85f
